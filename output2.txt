@@ -1,0 +1,50 @@
+TestCase1: (1, 1, 1)     Actual Output : 1
+Observed Output : 1   TestResult : passed
+Lines Covered: [1, 2, 3, 4, 5, 7, 9]
+---------------------------------------------------------
+TestCase2: (-23, -12, -14)     Actual Output : -12
+Observed Output : -12   TestResult : passed
+Lines Covered: [1, 2, 3, 5, 6, 7, 9]
+---------------------------------------------------------
+TestCase3: (0, -2, -1)     Actual Output : 0
+Observed Output : -1   TestResult : failed
+Lines Covered: [1, 2, 3, 5, 7, 8, 9]
+---------------------------------------------------------
+TestCase4: (-12, -122, -299)     Actual Output : -12
+Observed Output : 0   TestResult : failed
+Lines Covered: [1, 2, 3, 5, 7, 9]
+---------------------------------------------------------
+TestCase5: (90, 87, 7654)     Actual Output : 7654
+Observed Output : 7654   TestResult : passed
+Lines Covered: [1, 2, 3, 4, 5, 7, 8, 9]
+---------------------------------------------------------
+TestCase6: (0, -1452, -45)     Actual Output : 0
+Observed Output : -45   TestResult : failed
+Lines Covered: [1, 2, 3, 5, 7, 8, 9]
+---------------------------------------------------------
+TestCase7: (1, 2, 3)     Actual Output : 3
+Observed Output : 3   TestResult : passed
+Lines Covered: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+---------------------------------------------------------
+TestCase8: (-12, -245, -77)     Actual Output : -12
+Observed Output : -77   TestResult : failed
+Lines Covered: [1, 2, 3, 5, 7, 8, 9]
+---------------------------------------------------------
+LineNo	Suspicious_Score	Rank		Line of code
+8		0.6		1				max=z
+
+1		0.5		2		def maximum(x,y,z):
+
+2		0.5		2			max=0
+
+3		0.5		2			if x>max:
+
+5		0.5		2			if y>x:
+
+7		0.5		2			if z>y:
+
+9		0.5		2			return max
+4		0.0		3				max=x
+
+6		0.0		3				max=y
+

@@ -1,0 +1,4 @@
+BuggyProgram,TestSuite
+middle.py,testSuiteMid.txt
+maximum.py,testSuiteMaximum.txt
+is_prime.py,testSuitePrime.txt

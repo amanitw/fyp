@@ -1,0 +1,74 @@
+TestCase1: (1, 1, 1)     Actual Output : 1
+Observed Output : 1   TestResult : passed
+Lines Covered: [1, 2, 3, 9, 11, 13]
+---------------------------------------------------------
+TestCase2: (10, 7, 1000)     Actual Output : 10
+Observed Output : 7   TestResult : failed
+Lines Covered: [1, 2, 3, 4, 6, 7, 13]
+---------------------------------------------------------
+TestCase3: (1700, 5678, 1111)     Actual Output : 1700
+Observed Output : 1700   TestResult : passed
+Lines Covered: [1, 2, 3, 9, 11, 12, 13]
+---------------------------------------------------------
+TestCase4: (12, 17, 19)     Actual Output : 17
+Observed Output : 17   TestResult : passed
+Lines Covered: [1, 2, 3, 4, 5, 13]
+---------------------------------------------------------
+TestCase5: (28, 199, 77)     Actual Output : 77
+Observed Output : 77   TestResult : passed
+Lines Covered: [1, 2, 3, 9, 11, 13]
+---------------------------------------------------------
+TestCase6: (199, 12, 6666)     Actual Output : 199
+Observed Output : 12   TestResult : failed
+Lines Covered: [1, 2, 3, 4, 6, 7, 13]
+---------------------------------------------------------
+TestCase7: (1666, 178, 99)     Actual Output : 178
+Observed Output : 178   TestResult : passed
+Lines Covered: [1, 2, 3, 9, 10, 13]
+---------------------------------------------------------
+TestCase8: (1222, 776, 3000)     Actual Output : 1222
+Observed Output : 776   TestResult : failed
+Lines Covered: [1, 2, 3, 4, 6, 7, 13]
+---------------------------------------------------------
+TestCase9: (55, 55, 55)     Actual Output : 55
+Observed Output : 55   TestResult : passed
+Lines Covered: [1, 2, 3, 9, 11, 13]
+---------------------------------------------------------
+TestCase10: (277, 123, 11)     Actual Output : 123
+Observed Output : 123   TestResult : passed
+Lines Covered: [1, 2, 3, 9, 10, 13]
+---------------------------------------------------------
+TestCase11: (12, 13, 14)     Actual Output : 13
+Observed Output : 13   TestResult : passed
+Lines Covered: [1, 2, 3, 4, 5, 13]
+---------------------------------------------------------
+TestCase12: (99, 56, 123)     Actual Output : 99
+Observed Output : 56   TestResult : failed
+Lines Covered: [1, 2, 3, 4, 6, 7, 13]
+---------------------------------------------------------
+LineNo	Suspicious_Score	Rank		Line of code
+6		1.0		1				elif (x<z):
+
+7		1.0		1					m = y
+
+4		0.8		2				if(x<y):
+
+1		0.5		3		def middle(x,y,z):
+
+2		0.5		3			m = z
+
+3		0.5		3			if (y<z):
+
+13		0.5		3			return m
+5		0.0		4					m = y
+
+8		0.0		4			else:
+
+9		0.0		4				if(x>y):
+
+10		0.0		4					m = y
+
+11		0.0		4				elif (x>z):
+
+12		0.0		4					m = x
+

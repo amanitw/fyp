@@ -1,0 +1,58 @@
+TestCase1: (12,)     Actual Output : 0
+Observed Output : 0   TestResult : passed
+Lines Covered: [1, 2, 4, 6, 7, 8]
+---------------------------------------------------------
+TestCase2: (2,)     Actual Output : 1
+Observed Output : 1   TestResult : passed
+Lines Covered: [1, 2, 4, 6, 9]
+---------------------------------------------------------
+TestCase3: (5,)     Actual Output : 1
+Observed Output : 1   TestResult : passed
+Lines Covered: [1, 2, 4, 6, 7, 9]
+---------------------------------------------------------
+TestCase4: (31,)     Actual Output : 1
+Observed Output : 1   TestResult : passed
+Lines Covered: [1, 2, 4, 6, 7, 9]
+---------------------------------------------------------
+TestCase5: (-2,)     Actual Output : 0
+Observed Output : 1   TestResult : failed
+Lines Covered: [1, 2, 3]
+---------------------------------------------------------
+TestCase6: (66,)     Actual Output : 0
+Observed Output : 0   TestResult : passed
+Lines Covered: [1, 2, 4, 6, 7, 8]
+---------------------------------------------------------
+TestCase7: (0,)     Actual Output : 0
+Observed Output : 0   TestResult : passed
+Lines Covered: [1, 2, 4, 5]
+---------------------------------------------------------
+TestCase8: (-23,)     Actual Output : 0
+Observed Output : 1   TestResult : failed
+Lines Covered: [1, 2, 3]
+---------------------------------------------------------
+TestCase9: (1,)     Actual Output : 0
+Observed Output : 0   TestResult : passed
+Lines Covered: [1, 2, 4, 5]
+---------------------------------------------------------
+TestCase10: (17,)     Actual Output : 1
+Observed Output : 1   TestResult : passed
+Lines Covered: [1, 2, 4, 6, 7, 9]
+---------------------------------------------------------
+LineNo	Suspicious_Score	Rank		Line of code
+3		1.0		1		        return 1		#bug
+
+1		0.5		2		def is_prime(number):
+
+2		0.5		2		    if number < 0:
+
+4		0.0		3		    if number in (0, 1):
+
+5		0.0		3		        return 0
+
+6		0.0		3		    for element in range(2, number):
+
+7		0.0		3		        if number % element == 0:
+
+8		0.0		3		            return 0
+
+9		0.0		3		    return 1
